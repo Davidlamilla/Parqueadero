@@ -1,12 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import Formulario from './Componentes/Formulario'
+import Header from './Componentes/Header'
+import ListaUsuarios from './Componentes/ListaUsuarios'
+import Usuarios from './Componentes/Usuarios'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <div className="App">
-    
+    <div className="container mx-auto mt-20">
+
+    <Header/>
+    <div className="mt-12 md:flex">
+    <Formulario/>
+    <ListaUsuarios/>
+    </div>
     </div>
   )
 }
